@@ -44,7 +44,7 @@ elif k == "decrypt":
     print()
     print(f'time taken {time.process_time() - tst}')
     print()
-    print(f'your decypted password is: {jfk}')
+    print(f'your decypted password is: {jfk} sec')
 
     f.close()
 
