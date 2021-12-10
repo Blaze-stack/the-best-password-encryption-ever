@@ -11,7 +11,7 @@ if k == "encrypt":
 
     tst = time.process_time()
 
-    f = open(f'{j}.txt', 'wb')
+    f = open(f'{j}.blaze', 'wb')
 
     jfk = b64encode(j.encode("utf-8"))
 
@@ -25,11 +25,11 @@ if k == "encrypt":
     print("done")
     f.close()
 elif k == "decrypt":
-    j = input("enter file name - the .txt")
+    j = input("enter file name - the .blaze part:   ")
 
     tst = time.process_time()
 
-    f = open(f'{j}.txt', 'rb')
+    f = open(f'{j}.blaze', 'rb')
 
     c = f.read()
 
