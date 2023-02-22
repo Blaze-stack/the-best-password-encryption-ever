@@ -1,7 +1,7 @@
 import time
 from base64 import b64decode, b64encode
 
-numbs = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+numb = 36
 
 
 k = input("encrypt or decrypt:   ")
@@ -15,7 +15,7 @@ if k == "encrypt":
 
     jfk = b64encode(j.encode("utf-8"))
 
-    for i in range(len(numbs)):
+    for i in range(numbs):
         jfk = b64encode(jfk)
 
     print("writing... ")
@@ -35,7 +35,7 @@ elif k == "decrypt":
 
     jfk = b64decode(c)
 
-    for i in range(len(numbs)):
+    for i in range(numbs):
         jfk = b64decode(jfk)
     
     jfk = jfk.decode("utf-8")
